@@ -20,15 +20,13 @@
             $this->expiryDate = $_expiryDate;
         }
 
-        public function getweight(){
+        public function getWeight(){
             return $this->weight;
         }
 
-        public function setweight($_weight){
+        public function setWeight($_weight){
             $this->weight = $_weight;
         }
     }
-
-
 
 ?>
