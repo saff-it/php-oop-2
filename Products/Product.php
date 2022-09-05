@@ -11,10 +11,10 @@
         protected $kindOfAnimal;
 
         function __construct($_name, $_price, $_brand, $_kindOfAnimal){
-           $this->name - $_name; 
-           $this->price - $_price; 
-           $this->brand - $_brand; 
-           $this->kindOfAnimal - $_kindOfAnimal; 
+           $this->name = $_name; 
+           $this->price = $_price; 
+           $this->brand = $_brand; 
+           $this->kindOfAnimal = $_kindOfAnimal; 
         }
 
         public function getName(){
