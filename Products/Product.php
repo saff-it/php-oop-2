@@ -2,6 +2,7 @@
     include_once __DIR__ . '/TypeOfProducts/AnimalFood.php';
     include_once __DIR__ . '/TypeOfProducts/AnimalToy.php';
     include_once __DIR__ . '/TypeOfProducts/AnimalLeash.php';
+    include_once __DIR__ . '../../Users/User.php';
 
 
     class Product{
@@ -12,7 +13,7 @@
 
         function __construct($_name, $_price, $_brand, $_kindOfAnimal){
            $this->name = $_name; 
-           $this->price = $_price; 
+           $this->setPrice($_price); 
            $this->brand = $_brand; 
            $this->kindOfAnimal = $_kindOfAnimal; 
         }
@@ -30,7 +31,11 @@
         }
 
         public function setPrice($_price){
-            $this->price = $_price;
+            if($this->discount = 0){
+                $this->price = $_price;
+            } else {
+                $this->price = ($_price - $this->discountRegistered) / 100;
+            }
         }
 
         public function getBrand(){
