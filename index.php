@@ -1,4 +1,7 @@
+<?php 
+    include_once __DIR__ . '/Products/Product.php';
 
+?>
 
 <!DOCTYPE html>
 <html lang="en">

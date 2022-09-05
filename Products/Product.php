@@ -1,6 +1,8 @@
 <?php 
+    include_once __DIR__ . '/TypeOfProducts/AnimalFood.php';
+    include_once __DIR__ . '/TypeOfProducts/AnimalToy.php';
+    include_once __DIR__ . '/TypeOfProducts/AnimalLeash.php';
 
-require_once __DIR__ . '../index.php';
 
     class Product{
         protected $name;
