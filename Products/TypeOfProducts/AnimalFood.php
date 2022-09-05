@@ -1,5 +1,5 @@
 <?php 
-    
+
 
     class Food extends Product{
         protected $expiryDate;
@@ -29,7 +29,7 @@
         }
     }
 
-    $foodOne = new Food('Bastoncino di Pollo', '5€', 'Purina', 'dog', '11/10/2030', '25gr');
+    $foodOne = new Food('Bastoncino di Pollo', '5€', 'Purina', 'dog', '11-10-2030', '25gr');
     var_dump($foodOne);
 
 ?>

@@ -1,7 +1,5 @@
 <?php 
-    
-
-    class Food extends Product{
+    class Leash extends Product{
         protected $lenght;
         protected $color;
 

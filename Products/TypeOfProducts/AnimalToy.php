@@ -1,7 +1,7 @@
 <?php 
     
 
-    class Food extends Product{
+    class Toy extends Product{
         protected $shape;
         protected $color;
         protected $isWithSound;
